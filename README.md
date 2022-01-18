@@ -4,19 +4,19 @@ Some VirtualBox Tutorials
 # Convert Between Fixed and Dynamic Disks
 If we want to resize our virtualbox we must to set our disk like dynamic, so if our disk its in a fix mode we could convert it.
 
-- Exexute this command to create a clone version of our old disk but in dynamic mode
+- Execute this command to create a clone version of our old disk but in dynamic mode
 
 ```shell
 VBoxManage.exe clonemedium disk "C:\path\to\source.vdi" "C:\path\to\destination.vdi" –variant Standard
 ```
 
-- Now we must detach out old disk ans attache the new on from virtualbox.
+- Now we must detach our old disk and attach the new one from VirtualBox.
 
 ![Attach VirtualBox disk](captures/attach_disk_vb.png "Attach VirtualBox disk")
 
 # Resize a Dynamic Disk
 
-One prerequisite to resize any disk in VirtualBox it's that it must be in dynamic mode. 
+One prerequisite to resize any disk in VirtualBox is that it must be in dynamic mode. 
 
 -Now from v5 of Virtualbox exist a tool called Virtual Media Manager to resize the disk in a visual mode
 
@@ -38,9 +38,9 @@ sudo apt-get install gparted
 
 ![Apply Parition Changes](captures/apply_changes.png "Apply Parition Changes")
 
-- check the new size.
+- Check the new size.
 
-Execute this command
+Execute this command:
 
 ```shell
 df -h
